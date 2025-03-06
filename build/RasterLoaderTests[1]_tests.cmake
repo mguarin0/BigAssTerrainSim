@@ -1,0 +1,7 @@
+add_test([=[RasterLoaderTest.LoadValidHeightmap]=]  /usr/src/build/RasterLoaderTests [==[--gtest_filter=RasterLoaderTest.LoadValidHeightmap]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[RasterLoaderTest.LoadValidHeightmap]=]  PROPERTIES WORKING_DIRECTORY /usr/src/build SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==])
+add_test([=[RasterLoaderTest.LoadInvalidFile]=]  /usr/src/build/RasterLoaderTests [==[--gtest_filter=RasterLoaderTest.LoadInvalidFile]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[RasterLoaderTest.LoadInvalidFile]=]  PROPERTIES WORKING_DIRECTORY /usr/src/build SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==])
+add_test([=[RasterLoaderTest.HeightmapDataCheck]=]  /usr/src/build/RasterLoaderTests [==[--gtest_filter=RasterLoaderTest.HeightmapDataCheck]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[RasterLoaderTest.HeightmapDataCheck]=]  PROPERTIES WORKING_DIRECTORY /usr/src/build SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==])
+set(  RasterLoaderTests_TESTS RasterLoaderTest.LoadValidHeightmap RasterLoaderTest.LoadInvalidFile RasterLoaderTest.HeightmapDataCheck)

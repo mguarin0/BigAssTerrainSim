@@ -1,0 +1,4 @@
+RasterLoaderTest.LoadValidHeightmap 1 0.0382187
+RasterLoaderTest.LoadInvalidFile 1 0.050409
+RasterLoaderTest.HeightmapDataCheck 1 0.0468908
+---

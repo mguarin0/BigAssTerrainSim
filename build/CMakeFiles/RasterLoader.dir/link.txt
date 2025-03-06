@@ -1,0 +1,2 @@
+/usr/bin/ar qc libRasterLoader.a CMakeFiles/RasterLoader.dir/src/raster_loader.cpp.o
+/usr/bin/ranlib libRasterLoader.a

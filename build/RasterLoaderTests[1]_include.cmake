@@ -1,0 +1,5 @@
+if(EXISTS "/usr/src/build/RasterLoaderTests[1]_tests.cmake")
+  include("/usr/src/build/RasterLoaderTests[1]_tests.cmake")
+else()
+  add_test(RasterLoaderTests_NOT_BUILT RasterLoaderTests_NOT_BUILT)
+endif()
