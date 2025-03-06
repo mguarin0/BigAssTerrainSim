@@ -1,6 +1,7 @@
 /usr/src/build/CMakeFiles/RasterLoader.dir
 /usr/src/build/CMakeFiles/BigAssTerrainSim.dir
 /usr/src/build/CMakeFiles/RasterLoaderTests.dir
+/usr/src/build/CMakeFiles/format.dir
 /usr/src/build/CMakeFiles/test.dir
 /usr/src/build/CMakeFiles/edit_cache.dir
 /usr/src/build/CMakeFiles/rebuild_cache.dir

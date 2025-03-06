@@ -4,4 +4,6 @@ add_test([=[RasterLoaderTest.LoadInvalidFile]=]  /usr/src/build/RasterLoaderTest
 set_tests_properties([=[RasterLoaderTest.LoadInvalidFile]=]  PROPERTIES WORKING_DIRECTORY /usr/src/build SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==])
 add_test([=[RasterLoaderTest.HeightmapDataCheck]=]  /usr/src/build/RasterLoaderTests [==[--gtest_filter=RasterLoaderTest.HeightmapDataCheck]==] --gtest_also_run_disabled_tests)
 set_tests_properties([=[RasterLoaderTest.HeightmapDataCheck]=]  PROPERTIES WORKING_DIRECTORY /usr/src/build SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==])
-set(  RasterLoaderTests_TESTS RasterLoaderTest.LoadValidHeightmap RasterLoaderTest.LoadInvalidFile RasterLoaderTest.HeightmapDataCheck)
+add_test([=[RasterLoaderTest.CopyToGPU]=]  /usr/src/build/RasterLoaderTests [==[--gtest_filter=RasterLoaderTest.CopyToGPU]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[RasterLoaderTest.CopyToGPU]=]  PROPERTIES WORKING_DIRECTORY /usr/src/build SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==])
+set(  RasterLoaderTests_TESTS RasterLoaderTest.LoadValidHeightmap RasterLoaderTest.LoadInvalidFile RasterLoaderTest.HeightmapDataCheck RasterLoaderTest.CopyToGPU)

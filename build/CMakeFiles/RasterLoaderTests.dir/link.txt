@@ -1,1 +1,1 @@
-/usr/bin/clang++ CMakeFiles/RasterLoaderTests.dir/tests/raster_loader_test.cpp.o -o RasterLoaderTests  libRasterLoader.a lib/libgtest_main.a /usr/lib/libgdal.so lib/libgtest.a
+/usr/bin/c++ -g CMakeFiles/RasterLoaderTests.dir/tests/raster_loader_test.cpp.o -o RasterLoaderTests  libRasterLoader.a lib/libgtest_main.a /usr/lib/libgdal.so lib/libgtest.a

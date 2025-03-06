@@ -1,8 +1,8 @@
 # BigAssTerrainSim
 
 # docker 
-sudo docker build -t ubuntu-clang-python .
-sudo docker run -dit --mount type=bind,source="$(pwd)",target=/usr/src ubuntu-clang-python
+sudo docker build -t bats:latest .
+sudo docker run --gpus all -dit --mount type=bind,source="$(pwd)",target=/usr/src bats:latest
 
 
 # copernicus data; this is a great dataset but haven't completely figured it out
@@ -17,7 +17,11 @@ aws s3 ls s3://eodata/auxdata/CopDEM_COG/copernicus-dem-30m/Copernicus_DSM_COG_1
 ```bash
 sudo apt-get install clang-format
 clang-format -style=Google -dump-config > .clang-format
+find src include -iname "*.cpp" -o -iname "*.h" | xargs clang-format -i
 ```
+sudo apt-get install clang-tidy
+find src -name "*.cpp" | xargs -r -I{} clang-tidy {} -- -Iinclude
+
 
 
 # testing
@@ -34,4 +38,30 @@ build tests
 mkdir -p build && cd build
 cmake .. -DCMAKE_BUILD_TYPE=Debug
 make
+```
+ctest --output-on-failure
+
+
+# documenting with doxygen
+`doxygen -g Doxyfile`
+This creates Doxyfile, the config file for generating documentation.
+
+3️⃣ Enable C++ Support in Doxyfile
+Edit Doxyfile and modify:
+
+```ini
+EXTRACT_ALL            = YES
+FILE_PATTERNS          = *.cpp *.h
+GENERATE_HTML          = YES
+GENERATE_LATEX         = NO
+```
+
+4️⃣ Generate Documentation
+```bash
+doxygen Doxyfile
+```
+This creates an HTML documentation in html/. Open:
+
+```bash
+xdg-open html/index.html
 ```

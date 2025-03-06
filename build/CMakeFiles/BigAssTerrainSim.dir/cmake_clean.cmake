@@ -1,6 +1,8 @@
 file(REMOVE_RECURSE
   "BigAssTerrainSim"
   "BigAssTerrainSim.pdb"
+  "CMakeFiles/BigAssTerrainSim.dir/src/agent_simulator.cpp.o"
+  "CMakeFiles/BigAssTerrainSim.dir/src/agent_simulator.cpp.o.d"
   "CMakeFiles/BigAssTerrainSim.dir/src/main.cpp.o"
   "CMakeFiles/BigAssTerrainSim.dir/src/main.cpp.o.d"
   "CMakeFiles/BigAssTerrainSim.dir/src/raster_loader.cpp.o"

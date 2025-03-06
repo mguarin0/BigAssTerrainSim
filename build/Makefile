@@ -211,6 +211,19 @@ RasterLoaderTests/fast:
 .PHONY : RasterLoaderTests/fast
 
 #=============================================================================
+# Target rules for targets named format
+
+# Build rule for target.
+format: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 format
+.PHONY : format
+
+# fast build rule for target.
+format/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/format.dir/build.make CMakeFiles/format.dir/build
+.PHONY : format/fast
+
+#=============================================================================
 # Target rules for targets named gmock
 
 # Build rule for target.
@@ -261,6 +274,30 @@ gtest_main: cmake_check_build_system
 gtest_main/fast:
 	$(MAKE) $(MAKESILENT) -f external/gtest/googletest/googletest/CMakeFiles/gtest_main.dir/build.make external/gtest/googletest/googletest/CMakeFiles/gtest_main.dir/build
 .PHONY : gtest_main/fast
+
+src/agent_simulator.o: src/agent_simulator.cpp.o
+.PHONY : src/agent_simulator.o
+
+# target to build an object file
+src/agent_simulator.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BigAssTerrainSim.dir/build.make CMakeFiles/BigAssTerrainSim.dir/src/agent_simulator.cpp.o
+.PHONY : src/agent_simulator.cpp.o
+
+src/agent_simulator.i: src/agent_simulator.cpp.i
+.PHONY : src/agent_simulator.i
+
+# target to preprocess a source file
+src/agent_simulator.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BigAssTerrainSim.dir/build.make CMakeFiles/BigAssTerrainSim.dir/src/agent_simulator.cpp.i
+.PHONY : src/agent_simulator.cpp.i
+
+src/agent_simulator.s: src/agent_simulator.cpp.s
+.PHONY : src/agent_simulator.s
+
+# target to generate assembly for a file
+src/agent_simulator.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BigAssTerrainSim.dir/build.make CMakeFiles/BigAssTerrainSim.dir/src/agent_simulator.cpp.s
+.PHONY : src/agent_simulator.cpp.s
 
 src/main.o: src/main.cpp.o
 .PHONY : src/main.o
@@ -350,6 +387,7 @@ help:
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
 	@echo "... test"
+	@echo "... format"
 	@echo "... BigAssTerrainSim"
 	@echo "... RasterLoader"
 	@echo "... RasterLoaderTests"
@@ -357,6 +395,9 @@ help:
 	@echo "... gmock_main"
 	@echo "... gtest"
 	@echo "... gtest_main"
+	@echo "... src/agent_simulator.o"
+	@echo "... src/agent_simulator.i"
+	@echo "... src/agent_simulator.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"

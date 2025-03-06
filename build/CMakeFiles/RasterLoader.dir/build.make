@@ -76,15 +76,15 @@ CMakeFiles/RasterLoader.dir/src/raster_loader.cpp.o: CMakeFiles/RasterLoader.dir
 CMakeFiles/RasterLoader.dir/src/raster_loader.cpp.o: /usr/src/src/raster_loader.cpp
 CMakeFiles/RasterLoader.dir/src/raster_loader.cpp.o: CMakeFiles/RasterLoader.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/usr/src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/RasterLoader.dir/src/raster_loader.cpp.o"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/RasterLoader.dir/src/raster_loader.cpp.o -MF CMakeFiles/RasterLoader.dir/src/raster_loader.cpp.o.d -o CMakeFiles/RasterLoader.dir/src/raster_loader.cpp.o -c /usr/src/src/raster_loader.cpp
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/RasterLoader.dir/src/raster_loader.cpp.o -MF CMakeFiles/RasterLoader.dir/src/raster_loader.cpp.o.d -o CMakeFiles/RasterLoader.dir/src/raster_loader.cpp.o -c /usr/src/src/raster_loader.cpp
 
 CMakeFiles/RasterLoader.dir/src/raster_loader.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/RasterLoader.dir/src/raster_loader.cpp.i"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /usr/src/src/raster_loader.cpp > CMakeFiles/RasterLoader.dir/src/raster_loader.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /usr/src/src/raster_loader.cpp > CMakeFiles/RasterLoader.dir/src/raster_loader.cpp.i
 
 CMakeFiles/RasterLoader.dir/src/raster_loader.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/RasterLoader.dir/src/raster_loader.cpp.s"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /usr/src/src/raster_loader.cpp -o CMakeFiles/RasterLoader.dir/src/raster_loader.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /usr/src/src/raster_loader.cpp -o CMakeFiles/RasterLoader.dir/src/raster_loader.cpp.s
 
 # Object files for target RasterLoader
 RasterLoader_OBJECTS = \

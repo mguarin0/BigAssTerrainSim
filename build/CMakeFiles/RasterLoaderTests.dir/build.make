@@ -76,15 +76,15 @@ CMakeFiles/RasterLoaderTests.dir/tests/raster_loader_test.cpp.o: CMakeFiles/Rast
 CMakeFiles/RasterLoaderTests.dir/tests/raster_loader_test.cpp.o: /usr/src/tests/raster_loader_test.cpp
 CMakeFiles/RasterLoaderTests.dir/tests/raster_loader_test.cpp.o: CMakeFiles/RasterLoaderTests.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/usr/src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/RasterLoaderTests.dir/tests/raster_loader_test.cpp.o"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/RasterLoaderTests.dir/tests/raster_loader_test.cpp.o -MF CMakeFiles/RasterLoaderTests.dir/tests/raster_loader_test.cpp.o.d -o CMakeFiles/RasterLoaderTests.dir/tests/raster_loader_test.cpp.o -c /usr/src/tests/raster_loader_test.cpp
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/RasterLoaderTests.dir/tests/raster_loader_test.cpp.o -MF CMakeFiles/RasterLoaderTests.dir/tests/raster_loader_test.cpp.o.d -o CMakeFiles/RasterLoaderTests.dir/tests/raster_loader_test.cpp.o -c /usr/src/tests/raster_loader_test.cpp
 
 CMakeFiles/RasterLoaderTests.dir/tests/raster_loader_test.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/RasterLoaderTests.dir/tests/raster_loader_test.cpp.i"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /usr/src/tests/raster_loader_test.cpp > CMakeFiles/RasterLoaderTests.dir/tests/raster_loader_test.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /usr/src/tests/raster_loader_test.cpp > CMakeFiles/RasterLoaderTests.dir/tests/raster_loader_test.cpp.i
 
 CMakeFiles/RasterLoaderTests.dir/tests/raster_loader_test.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/RasterLoaderTests.dir/tests/raster_loader_test.cpp.s"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /usr/src/tests/raster_loader_test.cpp -o CMakeFiles/RasterLoaderTests.dir/tests/raster_loader_test.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /usr/src/tests/raster_loader_test.cpp -o CMakeFiles/RasterLoaderTests.dir/tests/raster_loader_test.cpp.s
 
 # Object files for target RasterLoaderTests
 RasterLoaderTests_OBJECTS = \
