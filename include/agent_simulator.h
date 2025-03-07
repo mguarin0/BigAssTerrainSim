@@ -1,17 +1,14 @@
 #pragma once
 
 #include <thrust/device_vector.h>
-#include <thrust/for_each.h>
-#include <thrust/tuple.h>
-
-#include <cmath>
 
 class AgentSimulator {
  public:
   AgentSimulator(int num_agents, int width, int height);
 
-  void initializeAgents();
-  void advanceSimulation();
+  void initializeAgents();  // Randomize initial positions
+  void advanceSimulation(const thrust::device_vector<float>& delta_speed,
+                         const thrust::device_vector<float>& delta_heading);
 
   const thrust::device_vector<float>& getX() const { return d_x; }
   const thrust::device_vector<float>& getY() const { return d_y; }

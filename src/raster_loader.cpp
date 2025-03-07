@@ -13,7 +13,10 @@ bool RasterLoader::loadHeightmap(const std::string& filepath) {
     return false;
   }
 
-  GDALRasterBand* band = dataset->GetRasterBand(1);
+  GDALRasterBand* band =
+      dataset->GetRasterBand(1);  // assuming first band is the elevation
+                                  // data (seems to be the case) might be a good
+                                  // idea to make this more flexible
   if (!band) {
     std::cerr << "Error: Failed to get raster band" << std::endl;
     GDALClose(dataset);
@@ -27,6 +30,9 @@ bool RasterLoader::loadHeightmap(const std::string& filepath) {
 
   heightmapHost.resize(width * height);
 
+  // read in entire raster image from file into `heightmapHost`
+  // NOTE `heightmapHost.data` provides a raw pointer to the underlying memory
+  // to store the pixel values
   if (band->RasterIO(GF_Read, 0, 0, width, height, heightmapHost.data(), width,
                      height, GDT_Float32, 0, 0) != CE_None) {
     std::cerr << "Error: Failed to read raster data" << std::endl;

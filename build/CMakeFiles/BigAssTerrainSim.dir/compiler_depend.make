@@ -932,6 +932,7 @@ CMakeFiles/BigAssTerrainSim.dir/src/main.cpp.o: /usr/src/src/main.cpp \
   /usr/include/thrust/detail/memory_wrapper.h \
   /usr/include/thrust/detail/minmax.h \
   /usr/include/thrust/detail/mismatch.inl \
+  /usr/include/thrust/detail/mpl/math.h \
   /usr/include/thrust/detail/numeric_traits.h \
   /usr/include/thrust/detail/overlapped_copy.h \
   /usr/include/thrust/detail/pair.inl \
@@ -982,6 +983,7 @@ CMakeFiles/BigAssTerrainSim.dir/src/main.cpp.o: /usr/src/src/main.cpp \
   /usr/include/thrust/for_each.h \
   /usr/include/thrust/functional.h \
   /usr/include/thrust/generate.h \
+  /usr/include/thrust/host_vector.h \
   /usr/include/thrust/iterator/counting_iterator.h \
   /usr/include/thrust/iterator/detail/any_assign.h \
   /usr/include/thrust/iterator/detail/any_system_tag.h \
@@ -1027,6 +1029,29 @@ CMakeFiles/BigAssTerrainSim.dir/src/main.cpp.o: /usr/src/src/main.cpp \
   /usr/include/thrust/mr/polymorphic_adaptor.h \
   /usr/include/thrust/mr/validator.h \
   /usr/include/thrust/pair.h \
+  /usr/include/thrust/random.h \
+  /usr/include/thrust/random/detail/discard_block_engine.inl \
+  /usr/include/thrust/random/detail/linear_congruential_engine.inl \
+  /usr/include/thrust/random/detail/linear_congruential_engine_discard.h \
+  /usr/include/thrust/random/detail/linear_feedback_shift_engine.inl \
+  /usr/include/thrust/random/detail/linear_feedback_shift_engine_wordmask.h \
+  /usr/include/thrust/random/detail/mod.h \
+  /usr/include/thrust/random/detail/normal_distribution.inl \
+  /usr/include/thrust/random/detail/normal_distribution_base.h \
+  /usr/include/thrust/random/detail/random_core_access.h \
+  /usr/include/thrust/random/detail/subtract_with_carry_engine.inl \
+  /usr/include/thrust/random/detail/uniform_int_distribution.inl \
+  /usr/include/thrust/random/detail/uniform_real_distribution.inl \
+  /usr/include/thrust/random/detail/xor_combine_engine.inl \
+  /usr/include/thrust/random/detail/xor_combine_engine_max.h \
+  /usr/include/thrust/random/discard_block_engine.h \
+  /usr/include/thrust/random/linear_congruential_engine.h \
+  /usr/include/thrust/random/linear_feedback_shift_engine.h \
+  /usr/include/thrust/random/normal_distribution.h \
+  /usr/include/thrust/random/subtract_with_carry_engine.h \
+  /usr/include/thrust/random/uniform_int_distribution.h \
+  /usr/include/thrust/random/uniform_real_distribution.h \
+  /usr/include/thrust/random/xor_combine_engine.h \
   /usr/include/thrust/reduce.h \
   /usr/include/thrust/replace.h \
   /usr/include/thrust/scan.h \
@@ -1907,6 +1932,8 @@ CMakeFiles/BigAssTerrainSim.dir/src/raster_loader.cpp.o: /usr/src/src/raster_loa
 /usr/include/x86_64-linux-gnu/asm/posix_types.h:
 
 /usr/include/x86_64-linux-gnu/asm/bitsperlong.h:
+
+/usr/include/thrust/host_vector.h:
 
 /usr/include/linux/types.h:
 
