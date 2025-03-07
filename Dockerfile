@@ -39,3 +39,4 @@ RUN apt install nvidia-cuda-toolkit
 # Set up a working directory
 WORKDIR /usr/src
 
+# TODO update thrust to use https://github.com/NVIDIA/cccl
