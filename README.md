@@ -1,19 +1,34 @@
 # BigAssTerrainSim
 
-# docker 
+## Details about terrain Simulation
+![Running Simulation](agent_simulation.gif)
+### Current Capabilities
+- configurable number of agents that are randomly positioned
+- agent movements occur in parallel on the gpu
+- random agent movements are generated (change in speed+ heading) and fed into the simulation
+
+### Next steps
+- write a python wrapper so that agent movements can be sent in via python...currently i'm thinking to use ctypes but mostly because pybind11 confuses me
+- expand the fidelity by enforcing traversibility rules, visibility+traversibility based on terrain using innersource capabilities
+- must expand the testing; currently only testing the loading of the raster
+- explore topography datasets to get more tiff files
+
+# Docker 
+```bash
 sudo docker build -t bats:latest .
 sudo docker run --gpus all -dit --mount type=bind,source="$(pwd)",target=/usr/src bats:latest
+```
 
-
-# copernicus data; this is a great dataset but haven't completely figured it out
+# Copernicus data; this is a great dataset but haven't completely figured it out
+```text
 key: 807QSJUD3SKJJ0PBY9H4
 secret: N8qXCFofGiQdc0GU9SOZKOArgkCmzVsH75TJnsL4
 aws configure
 export AWS_ENDPOINT_URL=https://eodata.dataspace.copernicus.eu/
 aws s3 ls s3://eodata/auxdata/CopDEM_COG/copernicus-dem-30m/Copernicus_DSM_COG_10_S90_00_W180_00_DEM/
+```
 
-
-# formatting
+# Formatting
 ```bash
 sudo apt-get install clang-format
 clang-format -style=Google -dump-config > .clang-format
@@ -24,8 +39,8 @@ find src -name "*.cpp" | xargs -r -I{} clang-tidy {} -- -Iinclude
 
 
 
-# testing
-get gtest
+# Run Tests
+## To get get gtest
 ```bash
 mkdir -p external/gtest && cd external/gtest
 git clone https://github.com/google/googletest.git
@@ -33,20 +48,22 @@ cd googletest
 cmake -DBUILD_GMOCK=OFF -DBUILD_GTEST=ON .
 make
 ```
-build tests
+## To build tests
 ```bash
 mkdir -p build && cd build
 cmake .. -DCMAKE_BUILD_TYPE=Debug
 make
 ```
+## To run tests
+```bash
 ctest --output-on-failure
+```
 
-
-# documenting with doxygen
+# Documenting with doxygen
 `doxygen -g Doxyfile`
 This creates Doxyfile, the config file for generating documentation.
 
-3️⃣ Enable C++ Support in Doxyfile
+### Enable C++ Support in Doxyfile
 Edit Doxyfile and modify:
 
 ```ini
@@ -56,7 +73,7 @@ GENERATE_HTML          = YES
 GENERATE_LATEX         = NO
 ```
 
-4️⃣ Generate Documentation
+### Generate Documentation
 ```bash
 doxygen Doxyfile
 ```

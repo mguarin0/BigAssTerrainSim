@@ -1,4 +1,11 @@
-from sentinelhub import SHConfig, SentinelHubRequest, DataCollection, MimeType, bbox_to_dimensions, BBox
+from sentinelhub import (
+    SHConfig,
+    SentinelHubRequest,
+    DataCollection,
+    MimeType,
+    bbox_to_dimensions,
+    BBox,
+)
 import numpy as np
 import matplotlib.pyplot as plt
 from PIL import Image
@@ -31,12 +38,12 @@ request = SentinelHubRequest(
         {
             "dataCollection": DataCollection.SENTINEL2_L2A,
             "timeRange": ("2024-02-01", "2024-02-28"),
-            "responses": [{"identifier": "default", "format": MimeType.TIFF}]
+            "responses": [{"identifier": "default", "format": MimeType.TIFF}],
         }
     ],
     bbox=bbox,
     size=size,
-    config=config
+    config=config,
 )
 
 # Get image data

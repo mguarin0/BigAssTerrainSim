@@ -34,7 +34,7 @@ RUN apt install nvidia-cuda-toolkit
 # cpp deps
 
 # Verify installation
-# RUN clang --version && python --version && cmake --version && g++ --version
+#RUN clang --version && python --version && cmake --version && g++ --version
 
 # Set up a working directory
 WORKDIR /usr/src
