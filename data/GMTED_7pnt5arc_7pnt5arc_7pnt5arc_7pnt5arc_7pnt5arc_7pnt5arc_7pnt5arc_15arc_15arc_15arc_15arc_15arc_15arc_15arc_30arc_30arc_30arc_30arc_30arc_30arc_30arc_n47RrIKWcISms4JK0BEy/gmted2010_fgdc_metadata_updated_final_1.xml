@@ -1,0 +1,483 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<metadata>
+  <idinfo>
+    <citation>
+      <citeinfo>
+        <origin>U.S. Geological Survey (USGS) Earth Resources Observation and Science (EROS) Center</origin>
+        <pubdate>20111130</pubdate>
+        <title>Global Multi-Resolution Terrain Elevation Data - National Geospatial Data Asset (NGDA)</title>
+        <geoform>raster digital data</geoform>
+        <othercit>https://doi.org/10.3133/ofr20111073</othercit>
+        <onlink>https://topotools.cr.usgs.gov/gmted_viewer/viewer.htm</onlink>
+      </citeinfo>
+    </citation>
+    <descript>
+      <abstract>The Global Multi-resolution Terrain Elevation Data 2010 (GMTED2010) provides a new level of detail in global topographic data. Previously, the best available global DEM was GTOPO30 with a horizontal grid spacing of 30 arc-seconds. The GMTED2010 product suite contains seven new raster elevation products for each of the 30-, 15-, and 7.5-arc-second spatial resolutions and incorporates the current best available global elevation data. The new elevation products have been produced using the following aggregation methods: minimum elevation, maximum elevation, mean elevation, median elevation, standard deviation of elevation, systematic subsample, and breakline emphasis. Metadata have also been produced to identify the source and attributes of all the input elevation data used to derive the output products. Many of these products will be suitable for various regional continental-scale land cover mapping, extraction of drainage features for hydrologic modeling, and geometric and radiometric correction of medium and coarse resolution satellite image data. The global aggregated vertical accuracy of GMTED2010 can be summarized in terms of the resolution and RMSE of the products with respect to a global set of control points (estimated global accuracy of 6 m RMSE) provided by the National Geospatial-Intelligence Agency (NGA). At 30 arc-seconds, the GMTED2010 RMSE range is between 25 and 42 meters; at 15 arc-seconds, the RMSE range is between 29 and 32 meters; and at 7.5 arc-seconds, the RMSE range is between 26 and 30 meters. GMTED2010 is a major improvement in consistency and vertical accuracy over GTOPO30, which has a 66 m RMSE globally compared to the same NGA control points. In areas where new sources of higher resolution data were available, the GMTED2010 products are substantially better than the aggregated global statistics; however, large areas still exist, particularly above 60 degrees North latitude, that lack good elevation data. As new data become available, especially in areas that have poor coverage in the current model, it is hoped that new versions of GMTED2010 might be generated and thus gradually improve the global model.</abstract>
+      <purpose>In 1996, the U.S. Geological Survey (USGS) developed a global topographic elevation model designated as GTOPO30 at a horizontal resolution of 30 arc-seconds for the entire Earth. Because no single source of topographic information covered the entire land surface, GTOPO30 was derived from eight raster and vector sources that included a substantial amount of U.S. Defense Mapping Agency data. The quality of the elevation data in GTOPO30 varies widely; there are no spatially-referenced metadata, and the major topographic features such as ridge lines and valleys are not well represented. Despite its coarse resolution and limited attributes, GTOPO30 has been widely used for a variety of hydrological, climatological, and geomorphological applications as well as military applications, where a regional, continental, or global scale topographic model is required. These applications have ranged from delineating drainage networks and watersheds to using digital elevation data for the extraction of topographic structure and three-dimensional (3D) visualization exercises. Many of the fundamental geophysical processes active at the Earth's surface are controlled or strongly influenced by topography, thus the critical need for high-quality terrain data. U.S. Department of Defense requirements for mission planning, geographic registration of remotely sensed imagery, terrain visualization, and map production are similarly dependent on global topographic data. Since the time GTOPO30 was completed, the availability of higher-quality elevation data over large geographic areas has improved markedly. New data sources include global Digital Terrain Elevation Data (DTED®) from the Shuttle Radar Topography Mission (SRTM), Canadian elevation data, and data from the Ice, Cloud, and land Elevation Satellite (ICESat). Given the widespread use of GTOPO30 and the equivalent 30-arc-second DTED® level 0, the USGS and the National Geospatial-Intelligence Agency (NGA) have collaborated to produce an enhanced replacement for GTOPO30, the Global Land One-km Base Elevation (GLOBE) model and other comparable 30-arc-second-resolution global models, using the best available data. The new model is called the Global Multi-resolution Terrain Elevation Data 2010, or GMTED2010 for short. This suite of products at three different resolutions (approximately 1,000, 500, and 250 meters) is designed to support many applications directly by providing users with generic products (for example, maximum, minimum, and median elevations) that have been derived directly from the raw input data that would not be available to the general user or would be very costly and time-consuming to produce for individual applications. The source of all the elevation data is captured in metadata for reference purposes.</purpose>
+      <supplinf>https://www.usgs.gov/coastal-changes-and-impacts/gmted2010
+
+https://www.usgs.gov/centers/eros/science/usgs-eros-archive-digital-elevation-global-multi-resolution-terrain-elevation
+
+</supplinf>
+    </descript>
+    <timeperd>
+      <timeinfo>
+        <sngdate>
+          <caldate>20111130</caldate>
+        </sngdate>
+      </timeinfo>
+      <current>ground condition</current>
+    </timeperd>
+    <status>
+      <progress>Complete</progress>
+      <update>None planned</update>
+    </status>
+    <spdom>
+      <bounding>
+        <westbc>-180.0000</westbc>
+        <eastbc>179.9999</eastbc>
+        <northbc>83.9999</northbc>
+        <southbc>-90.0000</southbc>
+      </bounding>
+    </spdom>
+    <keywords>
+      <theme>
+        <themekt>ISO 19115 Topic Category</themekt>
+        <themekey>elevation</themekey>
+        <themekey>geoscientificInformation</themekey>
+      </theme>
+      <theme>
+        <themekt>USGS Metadata Identifier</themekt>
+        <themekey>USGS:EROS5e83a1f36d8572da</themekey>
+      </theme>
+      <theme>
+        <themekt>NGDA Portfolio Themes</themekt>
+        <themekey>NGDA</themekey>
+        <themekey> National Geospatial Data Asset</themekey>
+        <themekey>NGDAID39</themekey>
+        <themekey>Elevation Theme</themekey>
+      </theme>
+      <theme>
+        <themekt>None</themekt>
+        <themekey>Global Elevation</themekey>
+        <themekey>Digital Elevation Model</themekey>
+        <themekey>GMTED2010</themekey>
+        <themekey>WGS84</themekey>
+        <themekey>EGM96</themekey>
+        <themekey>U.S. Geological Survey</themekey>
+        <themekey>USGS</themekey>
+        <themekey>Earth Resources Observation and Science (EROS) </themekey>
+      </theme>
+      <place>
+        <placekt>Global</placekt>
+        <placekey>Global</placekey>
+      </place>
+    </keywords>
+    <accconst>No restrictions, All GMTED2010 data products are publicly available. Unless otherwise stated, all data, metadata and related materials are considered to satisfy the quality standards relative to the purpose for which the data were collected. Although these data and associated metadata have been reviewed for accuracy and completeness and approved for release by the U.S. Geological Survey (USGS), no warranty expressed or implied is made regarding the display or utility of the data for other purposes, nor on all computer systems, nor shall the act of distribution constitute any such warranty.</accconst>
+    <useconst>Although these data have been processed successfully on a computer system at the U.S. Geological Survey (USGS), no warranty expressed or implied is made regarding the display or utility of the data for other purposes, nor on all computer systems, nor shall the act of distribution constitute any such warranty. The USGS or the U.S. Government shall not be held liable for improper or incorrect use of the data described and/or contained herein.</useconst>
+    <ptcontac>
+      <cntinfo>
+        <cntorgp>
+          <cntorg>U.S. Geological Survey (USGS) Earth Resources Observation and Science (EROS) Center</cntorg>
+        </cntorgp>
+        <cntaddr>
+          <addrtype>mailing and physical address</addrtype>
+          <address>47914 252nd Street</address>
+          <city>Sioux Falls</city>
+          <state>South Dakota</state>
+          <postal>57198</postal>
+          <country>United States</country>
+        </cntaddr>
+        <cntvoice> 1-800-252-4547</cntvoice>
+        <cntemail>gmted2010@usgs.gov</cntemail>
+      </cntinfo>
+    </ptcontac>
+    <datacred>Suggested citation:
+Danielson, J.J., and Gesch, D.B., 2011, Global multi-resolution terrain elevation data 2010 (GMTED2010): U.S. Geological Survey Open-File Report 2011–1073, 26 p
+
+https://doi.org/10.3133/ofr20111073</datacred>
+    <native>For usability, Esri ArcGIS 10.8.2, Esri ArcGIS Pro 3.1.2 , GeoCue LP360, VDatum, Global Mapper, Geospatial Data Abstraction Library (GDAL), or equivalent GIS processing software and supporting operating systems are suggested for viewing the spatial metadata.
+
+Environment as of Metadata Creation: USGS Metadata Wizard 2.0.6; Esri ArcGIS 10.8.1 Service Pack N/A (Build N/A)</native>
+  </idinfo>
+  <dataqual>
+    <attracc>
+      <attraccr>See full documentation at http://pubs.usgs.gov/of/2011/1073/</attraccr>
+    </attracc>
+    <logic>See full documentation at http://pubs.usgs.gov/of/2011/1073/</logic>
+    <complete>See full documentation at http://pubs.usgs.gov/of/2011/1073/</complete>
+    <posacc>
+      <vertacc>
+        <vertaccr>The global aggregated vertical accuracy of GMTED2010 can be summarized in terms of the resolution and RMSE of the products with respect to a global set of control points (estimated) global accuracy of 6 m RMSE) provided by NGA. At 30 arc-seconds, the  GMTED2010 RMSE range is between 25 and 42 meters; at 15 arc-seconds, the RMSE range is between 29 and 32 meters; and at 7.5 arc-seconds, the RMSE range is between 26 and 30 meters. 
+
+See full documentation at http://pubs.usgs.gov/of/2011/1073/</vertaccr>
+      </vertacc>
+    </posacc>
+    <lineage>
+      <srcinfo>
+        <srccite>
+          <citeinfo>
+            <origin>USGS</origin>
+            <pubdate>20180730</pubdate>
+            <title>SRTM Void-Filled 1 arc-second digital terrain data</title>
+            <geoform>raster digital data</geoform>
+            <othercit>Farr, T.G., Rosen, P.A., Caro, E., Crippen, R., Duren, R., Hensley, S., Kobrick, M., Paller, M., Rodriguez, E., Roth, L., Seal, D., Shaffer, S., Shimada, J., Umland, J., Werner, M., Oskin, M., Burbank, D., and Alsdorf, D., 2007, The Shuttle Radar Topography Mission: Reviews of Geophysics, v. 45, RG2004, doi:10.1029/2005RG000183.</othercit>
+            <onlink>https://www.usgs.gov/centers/eros/science/usgs-eros-archive-digital-elevation-shuttle-radar-topography-mission-srtm-void</onlink>
+          </citeinfo>
+        </srccite>
+        <typesrc>Digital and/or Hardcopy</typesrc>
+        <srctime>
+          <timeinfo>
+            <rngdates>
+              <begdate>20000211</begdate>
+              <enddate>20000222</enddate>
+            </rngdates>
+          </timeinfo>
+          <srccurr>ground condition</srccurr>
+        </srctime>
+        <srccitea>SRTM Void-Filled 1 arc-second digital terrain data</srccitea>
+        <srccontr>See full documentation at http://pubs.usgs.gov/of/2011/1073/</srccontr>
+      </srcinfo>
+      <srcinfo>
+        <srccite>
+          <citeinfo>
+            <origin>NGA</origin>
+            <pubdate>20111007</pubdate>
+            <title>NGA Digital Terrain Elevation Data (DTED) </title>
+            <geoform>raster digital data</geoform>
+            <othercit>National Geospatial-Intelligence Agency (NGA), 2010. http://earth-info.nga.mil/GandG/wgs84/gravitymod/ (last referenced Jan. 11, 2011).</othercit>
+            <onlink>http://pubs.usgs.gov/of/2011/1073/</onlink>
+          </citeinfo>
+        </srccite>
+        <typesrc>Digital and/or Hardcopy</typesrc>
+        <srctime>
+          <timeinfo>
+            <sngdate>
+              <caldate>20111007</caldate>
+            </sngdate>
+          </timeinfo>
+          <srccurr>ground condition</srccurr>
+        </srctime>
+        <srccitea>NGA Digital Terrain Elevation Data (DTED) </srccitea>
+        <srccontr>See full documentation at http://pubs.usgs.gov/of/2011/1073/</srccontr>
+      </srcinfo>
+      <srcinfo>
+        <srccite>
+          <citeinfo>
+            <origin>Centre for Topographic Information (CTI)</origin>
+            <pubdate>20111007</pubdate>
+            <title>Canadian Digital Elevation Data (CDED)</title>
+            <geoform>raster digital data</geoform>
+            <othercit>Government of Canada, Natural Resources Canada, Centre for Topographic Information, 2007, Canadian Digital Elevation Data, Level 1 product specifications, Edition 3.0: GeoBase, 48 p., available online at http://www.geobase.ca/doc/specs/pdf/GeoBase_product_specs_CDED1_3_0.pdf
+</othercit>
+            <onlink>https://www.sciencebase.gov/catalog/item/4fe9ed91e4b04b50557536e1</onlink>
+          </citeinfo>
+        </srccite>
+        <typesrc>Digital and/or Hardcopy</typesrc>
+        <srctime>
+          <timeinfo>
+            <sngdate>
+              <caldate>20111007</caldate>
+            </sngdate>
+          </timeinfo>
+          <srccurr>ground condition</srccurr>
+        </srctime>
+        <srccitea>Canadian Digital Elevation Data (CDED)</srccitea>
+        <srccontr>See full documentation at http://pubs.usgs.gov/of/2011/1073/</srccontr>
+      </srcinfo>
+      <srcinfo>
+        <srccite>
+          <citeinfo>
+            <origin>Satellite Pour l’Observation de la Terre (SPOT)</origin>
+            <pubdate>20111007</pubdate>
+            <title>Satellite Pour l’Observation de la Terre (SPOT 5) Reference3D</title>
+            <geoform>raster digital data</geoform>
+            <othercit>Bouillon, A., Bernard, M., Gigord, P., Orsoni, A., Rudowski, V., and Baudoin, A., 2006, SPOT 5 HRS geometric performances—using block adjustment as a key issue to improve quality of DEM generation: ISPRS Journal of Photogrammetry and Remote Sensing, v. 60, no. 3, p. 134–146.</othercit>
+            <onlink>http://pubs.usgs.gov/of/2011/1073/</onlink>
+          </citeinfo>
+        </srccite>
+        <typesrc>Digital and/or Hardcopy</typesrc>
+        <srctime>
+          <timeinfo>
+            <sngdate>
+              <caldate>20111007</caldate>
+            </sngdate>
+          </timeinfo>
+          <srccurr>ground condition</srccurr>
+        </srctime>
+        <srccitea>Satellite Pour l’Observation de la Terre (SPOT 5) 
+Reference3D</srccitea>
+        <srccontr>See full documentation at http://pubs.usgs.gov/of/2011/1073/</srccontr>
+      </srcinfo>
+      <srcinfo>
+        <srccite>
+          <citeinfo>
+            <origin>USGS</origin>
+            <pubdate>20111007</pubdate>
+            <title>USGS National Elevation Dataset (NED) for the  continental United States and Alaska</title>
+            <geoform>raster digital data</geoform>
+            <othercit>Gesch, D.B., 2007, The National Elevation Dataset, in Maune, D., ed., Digital Elevation Model Technologies and Applications: The DEM Users Manual (2d ed.): Bethesda, Md., American Society for Photogrammetry and Remote Sensing, p. 99–118.</othercit>
+            <onlink>https://www.sciencebase.gov/catalog/item/4fcf8fd4e4b0c7fe80e81504</onlink>
+          </citeinfo>
+        </srccite>
+        <typesrc>Digital and/or Hardcopy</typesrc>
+        <srctime>
+          <timeinfo>
+            <sngdate>
+              <caldate>20111007</caldate>
+            </sngdate>
+          </timeinfo>
+          <srccurr>ground condition</srccurr>
+        </srctime>
+        <srccitea>USGS National Elevation Dataset (NED) for the continental United States and Alaska</srccitea>
+        <srccontr>See full documentation at http://pubs.usgs.gov/of/2011/1073/</srccontr>
+      </srcinfo>
+      <srcinfo>
+        <srccite>
+          <citeinfo>
+            <origin>Geoscience Australia</origin>
+            <pubdate>20111007</pubdate>
+            <title>GEODATA 9 second  digital elevation model (DEM) for Australia</title>
+            <geoform>raster digital data</geoform>
+            <othercit>Australian Government, 2006, Geoscience Australia, GEODATA 9 Second Digital Elevation Model (DEM-9S) 
+Version 3 available online at http://www.ga.gov.au/meta/
+ANZCW0703011541.html. (Accessed May 6, 2011.)</othercit>
+            <onlink>https://www.ga.gov.au/</onlink>
+          </citeinfo>
+        </srccite>
+        <typesrc>Digital and/or Hardcopy</typesrc>
+        <srctime>
+          <timeinfo>
+            <sngdate>
+              <caldate>20111007</caldate>
+            </sngdate>
+          </timeinfo>
+          <srccurr>ground condition</srccurr>
+        </srctime>
+        <srccitea>GEODATA 9 second 
+digital elevation model (DEM) for Australia</srccitea>
+        <srccontr>See full documentation at http://pubs.usgs.gov/of/2011/1073/</srccontr>
+      </srcinfo>
+      <srcinfo>
+        <srccite>
+          <citeinfo>
+            <origin>University of Bristol</origin>
+            <pubdate>20111007</pubdate>
+            <title>Antarctica  satellite radar and laser altimeter DEM</title>
+            <geoform>raster digital data</geoform>
+            <othercit>Bamber, J.L., Gomez-Dans, J.L., and Griggs, J.A., 2008, A new 1 km digital elevation model of the Antarctic derived  from combined satellite radar and laser data – Part 1: Data and methods: The Cryosphere Discuss., v. 2, p. 811–841.</othercit>
+            <onlink>https://nsidc.org/home</onlink>
+          </citeinfo>
+        </srccite>
+        <typesrc>Digital and/or Hardcopy</typesrc>
+        <srctime>
+          <timeinfo>
+            <sngdate>
+              <caldate>20111007</caldate>
+            </sngdate>
+          </timeinfo>
+          <srccurr>ground condition</srccurr>
+        </srctime>
+        <srccitea>Antarctica 
+satellite radar and laser altimeter DEM</srccitea>
+        <srccontr>See full documentation at http://pubs.usgs.gov/of/2011/1073/</srccontr>
+      </srcinfo>
+      <srcinfo>
+        <srccite>
+          <citeinfo>
+            <origin>Bamber</origin>
+            <pubdate>20111007</pubdate>
+            <title>Greenland  satellite radar altimeter DEM</title>
+            <geoform>raster digital data</geoform>
+            <othercit>Bamber, J.L., Ekholm, S., and Krabill, W.B., 2001, A new, high-resolution digital elevation model of Greenland fully 
+validated with airborne laser altimeter data: Journal of Geophysical Research: Solid Earth, v. 106, no. B4, 
+p. 6,733–6,745.</othercit>
+            <onlink> http://pubs.usgs.gov/of/2011/1073/</onlink>
+          </citeinfo>
+        </srccite>
+        <typesrc>Digital and/or Hardcopy</typesrc>
+        <srctime>
+          <timeinfo>
+            <sngdate>
+              <caldate>20111007</caldate>
+            </sngdate>
+          </timeinfo>
+          <srccurr>ground condition</srccurr>
+        </srctime>
+        <srccitea>Greenland 
+satellite radar altimeter DEM</srccitea>
+        <srccontr>See full documentation at http://pubs.usgs.gov/of/2011/1073/</srccontr>
+      </srcinfo>
+      <srcinfo>
+        <srccite>
+          <citeinfo>
+            <origin>USGS</origin>
+            <pubdate>19960630</pubdate>
+            <title>Global 30 Arc-Second Elevation (GTOPO30)</title>
+            <geoform>raster digital data</geoform>
+            <othercit>Gesch, D.B., Verdin, K.L., and Greenlee, S.K., 1999, New 
+Land Surface Digital Elevation Model Covers the Earth: 
+Eos, Transactions, American Geophysical Union, v. 80, 
+no. 6, p. 69–70.</othercit>
+            <onlink>https://www.usgs.gov/centers/eros/science/usgs-eros-archive-digital-elevation-global-30-arc-second-elevation-gtopo30</onlink>
+          </citeinfo>
+        </srccite>
+        <typesrc>Digital and/or Hardcopy</typesrc>
+        <srctime>
+          <timeinfo>
+            <sngdate>
+              <caldate>19960630</caldate>
+            </sngdate>
+          </timeinfo>
+          <srccurr>ground condition</srccurr>
+        </srctime>
+        <srccitea>Global 30 Arc-Second Elevation (GTOPO30)</srccitea>
+        <srccontr>See full documentation at http://pubs.usgs.gov/of/2011/1073/</srccontr>
+      </srcinfo>
+      <procstep>
+        <procdesc>See full documentation at http://pubs.usgs.gov/of/2011/1073/
+
+Danielson, J.J., and Gesch, D.B., 2011, Global multi-resolution terrain elevation data 2010 (GMTED2010): U.S. Geological Survey Open-File Report 2011–1073, 26 p</procdesc>
+        <procdate>20110630</procdate>
+      </procstep>
+    </lineage>
+  </dataqual>
+  <spdoinfo>
+    <direct>Raster</direct>
+    <rastinfo>
+      <rasttype>Grid Cell</rasttype>
+      <rowcount>20880</rowcount>
+      <colcount>43200</colcount>
+      <vrtcount>1</vrtcount>
+    </rastinfo>
+  </spdoinfo>
+  <spref>
+    <horizsys>
+      <geograph>
+        <latres>0.008333333300000011</latres>
+        <longres>0.008333333300000011</longres>
+        <geogunit>Decimal seconds</geogunit>
+      </geograph>
+      <geodetic>
+        <horizdn>WGS_1984</horizdn>
+        <ellips>WGS 84</ellips>
+        <semiaxis>6378137.0</semiaxis>
+        <denflat>298.257223563</denflat>
+      </geodetic>
+    </horizsys>
+    <vertdef>
+      <altsys>
+        <altdatum>EGM96</altdatum>
+        <altres>0.008333333300000011</altres>
+        <altres>0.008333333300000011</altres>
+        <altunits>meters</altunits>
+        <altenc>Explicit elevation coordinate included with horizontal coordinates</altenc>
+      </altsys>
+    </vertdef>
+  </spref>
+  <eainfo>
+    <detailed>
+      <enttyp>
+        <enttypl>mn30_grd.tif</enttypl>
+        <enttypd>Raster geospatial data file.</enttypd>
+        <enttypds>Producer defined</enttypds>
+      </enttyp>
+      <attr>
+        <attrlabl>OID</attrlabl>
+        <attrdef>Internal object identifier.</attrdef>
+        <attrdefs>Producer defined</attrdefs>
+        <attrdomv>
+          <udom>Sequential unique whole numbers that are automatically generated.</udom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>VALUE</attrlabl>
+        <attrdef>Elevation Value (Meters)</attrdef>
+        <attrdefs>Producer defined</attrdefs>
+        <attrdomv><rdom>
+            <rdommin>-430</rdommin>
+            <rdommax>8625</rdommax>
+            <attrunit>Meters</attrunit>
+            <attrmres>0.008333333333333</attrmres>
+          </rdom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>COUNT</attrlabl>
+        <attrdef>Elevation Value Count </attrdef>
+        <attrdefs>Producer defined</attrdefs>
+        <attrdomv><rdom>
+            <rdommin>1</rdommin>
+            <rdommax>583985051</rdommax>
+          </rdom>
+        </attrdomv>
+      </attr>
+    </detailed>
+    <overview>
+      <eaover>This collection of global elevation data is available in a user-friendly Georeferenced Tagged Image File Format (GeoTIFF). The elevation data have 16-bit numeric values. Areas where data is incomplete due to lack of full data coverage or NoData are represented with the numeric value of -32768. Spatially referenced metadata are contained within a shapefile format that contains footprints with accompanying attribute fields for each of the source input areas.
+
+</eaover>
+      <eadetcit>Suggested citation:
+Danielson, J.J., and Gesch, D.B., 2011, Global multi-resolution terrain elevation data 2010 (GMTED2010): U.S. Geological Survey Open-File Report 2011–1073, 26 p
+
+https://doi.org/10.3133/ofr20111073</eadetcit>
+    </overview>
+  </eainfo>
+  <distinfo>
+    <distrib>
+      <cntinfo>
+        <cntorgp>
+          <cntorg>U.S. Geological Survey (USGS) Earth Resources Observation &amp; Science (EROS) Center</cntorg>
+        </cntorgp>
+        <cntaddr>
+          <addrtype>mailing and physical address</addrtype>
+          <address>U.S. Geological Survey (USGS) EROS, 47914 252nd Street</address>
+          <city>Sioux Falls</city>
+          <state>South Dakota</state>
+          <postal>57198</postal>
+          <country>United States</country>
+        </cntaddr>
+        <cntvoice>1-888-275-8747)</cntvoice>
+      </cntinfo>
+    </distrib>
+    <resdesc>Online Data Availability: http://topotools.cr.usgs.gov/GMTED_viewer/ and http://edcsns17.cr.usgs.gov/NewEarthExplorer/ </resdesc>
+    <distliab>Unless otherwise stated, all data, metadata and related materials are considered to satisfy the quality standards relative to the purpose for which the data were collected. Although these data and associated metadata have been reviewed for accuracy and completeness and approved for release by the U.S. Geological Survey (USGS), no warranty expressed or implied is made regarding the display or utility of the data for other purposes, nor on all computer systems, nor shall the act of distribution constitute any such warranty.</distliab>
+    <stdorder>
+      <digform><digtinfo>
+          <formname>Digital Data</formname>
+        </digtinfo>
+        <digtopt><onlinopt><computer><networka><networkr>https://topotools.cr.usgs.gov/gmted_viewer/viewer.htm</networkr></networka></computer></onlinopt></digtopt></digform>
+      <fees>None</fees>
+    </stdorder>
+  </distinfo>
+  <metainfo>
+    <metd>20240314</metd>
+    <metc>
+      <cntinfo>
+        <cntorgp>
+          <cntorg>U.S. Geological Survey (USGS) Earth Resources Observation &amp; Science (EROS) Center</cntorg>
+          <cntper>REQUIRED: The person responsible for the metadata information.</cntper>
+        </cntorgp>
+        <cntaddr>
+          <addrtype>mailing and physical address</addrtype>
+          <address>47914 252nd Street</address>
+          <city>Sioux Falls</city>
+          <state>South Dakota</state>
+          <postal>57106</postal>
+          <country>USA</country>
+        </cntaddr>
+        <cntvoice>REQUIRED: The telephone number by which individuals can speak to the organization or individual.</cntvoice>
+        <cntemail>gmted2010@usgs.gov</cntemail>
+      </cntinfo>
+    </metc>
+    <metstdn>FGDC Content Standards for Digital Geospatial Metadata</metstdn>
+    <metstdv>FGDC-STD-001-1998</metstdv>
+    <mettc>local time</mettc>
+    <metac>No restrictions, All GMTED2010 data products and associated metadata are publicly available</metac>
+    <metuc>None</metuc>
+    <metextns>
+<onlink>http://www.esri.com/metadata/esriprof80.html</onlink>
+<metprof>ESRI Metadata Profile</metprof>
+</metextns>
+  </metainfo>
+</metadata>
